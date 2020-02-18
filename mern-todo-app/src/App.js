@@ -10,6 +10,22 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="collpase navbar-collapse">
+              <ul className="navbar-nav mr-auto">
+                <li className="navbar-item">
+                  <Link to="/" className="nav-link">
+                    Todos
+                  </Link>
+                </li>
+                <li className="navbar-item">
+                  <Link to="/create" className="nav-link">
+                    Create Todo
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
           <h2>Todo App</h2>
           <Route path="/" exact component={TodoList} />
           <Route path="/edit/:id" component={EditTodo} />
