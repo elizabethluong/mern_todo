@@ -26,10 +26,10 @@ class App extends Component {
               </ul>
             </div>
           </nav>
-          <h2>Todo App</h2>
+          {/* <h2>Todo App</h2> */}
           <Route path="/" exact component={TodoList} />
           <Route path="/edit/:id" component={EditTodo} />
-          <Route path="create" component={CreateTodo} />
+          <Route path="/create" component={CreateTodo} />
         </div>
       </Router>
     );
